@@ -6,6 +6,7 @@
 # Please see < https://github.com/IamDvis/DV-MUSIC/blob/master/LICENSE >
 #
 # All rights reserved.
+
 import os
 import re
 from os import getenv
@@ -115,17 +116,18 @@ AUTO_GCAST = os.getenv("AUTO_GCAST", "off")
 # Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
 AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
 
-# Only  Links formats are  accepted for this Var value.ᴘʀᴏᴍᴏᴛɪᴏɴ ᴘʀᴏᴏғ @Dns_Official_Channel @DNS_NETWORK ᴀʙᴏᴜᴛ @S12kgamer_YT
+
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/Dns_Official_Channel"
-)  # Example:- https://t.me/Dns_Official_Channel
+    "SUPPORT_CHANNEL", "https://t.me/ai_image_junction"
+)  # Example:- https://t.me/ai_image_junction
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/DNS_NETWORK"
-)  # Example:- https://t.me/DNS_NETWORK
+    "SUPPORT_GROUP", "https://t.me/+7ehnJA3aMb84OGNl"
+)  # Example:- https://t.me/+7ehnJA3aMb84OGNl
 
 SUPPORT_CHAT = getenv(
-    "SUPPORT_GROUP", "https://t.me/DNS_NETWORK"
-)  # Example:- https://t.me/DNS_NETWORK
+    "SUPPORT_GROUP", "https://t.me/+7ehnJA3aMb84OGNl"
+)  # Example:- https://t.me/+7ehnJA3aMb84OGNl
+
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
 
