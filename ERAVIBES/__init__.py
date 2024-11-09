@@ -9,6 +9,7 @@
 
 from ERAVIBES.core.bot import ERABot
 from ERAVIBES.core.dir import dirr
+from ERAVIBES.core.cookies import save_cookies
 from ERAVIBES.core.git import git
 from ERAVIBES.core.userbot import Userbot
 from ERAVIBES.misc import dbb, heroku, sudo
