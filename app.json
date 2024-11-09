@@ -74,6 +74,11 @@
         "value": "",
         "required": false
       },
+      "COOKIES": {
+        "description": "Paste your batbin link.",
+        "value": "https://batbin.me/raw/",
+        "required": true
+      },
       "TOKEN_ALLOW": {
         "description": "Fill 'True' if you want to use Token data for play youtube songs, Fill 'False' to use cookies (song will play by cookies)",
         "value": "True",
