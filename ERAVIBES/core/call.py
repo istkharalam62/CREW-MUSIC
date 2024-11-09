@@ -103,10 +103,13 @@ async def _clear_(chat_id):
 
     # Sending the final message
     try:
-        await app.send_message(
-            chat_id,
-            f"**🎧 ꜱᴏɴɢ ʜᴀꜱ ᴇɴᴅᴇᴅ ɪɴ ᴠᴄ🥺**{text}",
+        AMBOT = await app.send_message(
+                chat_id,
+                f"**🎧 ꜱᴏɴɢ ʜᴀꜱ ᴇɴᴅᴇᴅ ɪɴ ᴠᴄ🥺**{text}",
         )
+        await asyncio.sleep(10)
+        await AMBOT.delete()
+        
     except Exception as e:
         print(f"Error sending message: {e}")
 
