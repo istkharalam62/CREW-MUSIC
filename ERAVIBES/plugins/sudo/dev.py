@@ -25,7 +25,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import OWNER_ID
 from ERAVIBES import app
-from ERAVIBES.misc import SUDOERS
+from ERAVIBES.misc import OWNER_ID
 from ERAVIBES.utils.cleanmode import protect_message
 
 
@@ -51,7 +51,7 @@ async def edit_or_reply(msg: Message, **kwargs):
     & ~filters.via_bot
 )
 @app.on_message(
-    filters.command(["ev", "eval", "v"], prefixes=["/", "!", "%", ",", "-", ".", "e", "E"]) & SUDOERS & ~filters.forwarded & ~filters.via_bot
+    filters.command(["ev", "eval", "v"], prefixes=["/", "!", "%", ",", "-", ".", "e", "E"]) & OWNER_ID & ~filters.forwarded & ~filters.via_bot
 )
 async def executor(client: app, message: Message):
     if len(message.command) < 2:
@@ -157,7 +157,7 @@ async def forceclose_command(_, CallbackQuery):
     & ~filters.forwarded
     & ~filters.via_bot
 )
-@app.on_message(filters.command(["sh", "h"], prefixes=["/", "!", "%", ",", "-", ".", "S", "s"]) & SUDOERS & ~filters.forwarded & ~filters.via_bot)
+@app.on_message(filters.command(["sh", "h"], prefixes=["/", "!", "%", ",", "-", ".", "S", "s"]) & OWNER_ID & ~filters.forwarded & ~filters.via_bot)
 async def shellrunner(_, message: Message):
     if len(message.command) < 2:
         return await edit_or_reply(message, text="<b>ᴇxᴀᴍᴩʟᴇ :</b>\n/sh git pull")
