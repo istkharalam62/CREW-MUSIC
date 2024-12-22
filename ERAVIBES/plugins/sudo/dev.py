@@ -25,7 +25,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import OWNER_ID
 from ERAVIBES import app
-from ERAVIBES.misc import OWNER_ID
+#from ERAVIBES.misc import 
 from ERAVIBES.utils.cleanmode import protect_message
 
 
