@@ -54,7 +54,7 @@ async def init():
         if hasattr(imported_module, "__MODULE__") and imported_module.__MODULE__:
             if hasattr(imported_module, "__HELP__") and imported_module.__HELP__:
                 HELPABLE[imported_module.__MODULE__.lower()] = imported_module
-    LOGGER("ERAVIBES.plugins").info("Successfully Imported All Modules ")
+    LOGGER("ERAVIBES.plugins").info("𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗜𝗺𝗽𝗼𝗿𝘁𝗲𝗱 𝗔𝗹𝗹 𝗠𝗼𝗱𝘂𝗹𝗲𝘀 ✅")
 
     await userbot.start()
     await ERA.start()
