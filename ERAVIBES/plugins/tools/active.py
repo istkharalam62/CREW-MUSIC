@@ -131,6 +131,18 @@ async def activevi_(_, message: Message):
 
 @app.on_message(filters.command(["ac", "c"], prefixes=["/", "!", ".", "A", "a"]) & SUDOERS)
 async def start(client: Client, message: Message):
+    ac_audio = str(len(await get_active_chats()))
+    ac_video = str(len(await get_active_video_chats()))
+    await message.reply_text(
+        f"✫ <b><u>ᴀᴄᴛɪᴠᴇ ᴄʜᴀᴛs ɪɴғᴏ</u></b> :\n\nᴠᴏɪᴄᴇ : {ac_audio}\nᴠɪᴅᴇᴏ  : {ac_video}",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("✯ ᴄʟᴏsᴇ ✯", callback_data=f"close")]]
+        ),
+    )
+
+
+
+""""async def start(client: Client, message: Message):
     active_chats = await get_active_chats()
     active_video_chats = await get_active_video_chats()
     ok = await message.reply_text("**ғᴇᴛᴄʜɪɴɢ....**")
@@ -169,7 +181,7 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("✯ ᴄʟᴏsᴇ ✯", callback_data=f"close")]]
         ),
-    )
+    )""""
 
 
 __MODULE__ = "Aᴄᴛɪᴠᴇ"
