@@ -181,7 +181,7 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("✯ ᴄʟᴏsᴇ ✯", callback_data=f"close")]]
         ),
-    )""""
+    )"""
 
 
 __MODULE__ = "Aᴄᴛɪᴠᴇ"
