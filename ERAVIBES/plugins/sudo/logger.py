@@ -3,7 +3,7 @@ from pyrogram import filters
 from ERAVIBES import app
 from ERAVIBES.misc import SUDOERS
 from ERAVIBES.utils.database import add_off, add_on
-from SONALI.utils.decorators.language import language
+from ERAVIBES.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
