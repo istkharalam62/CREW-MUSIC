@@ -9,7 +9,7 @@ from pyrogram.types import (
     InputMediaVideo,
     Message,
 )
-from config import LOGGER_ID as LOG_GROUP_ID
+
 from ERAVIBES import app
 from ERAVIBES.core.userbot import Userbot
 from ERAVIBES.utils.database import delete_served_chat, add_served_chat
