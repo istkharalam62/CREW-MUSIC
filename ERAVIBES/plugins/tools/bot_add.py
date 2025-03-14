@@ -10,10 +10,10 @@ from pyrogram.types import (
     Message,
 )
 from config import LOGGER_ID as LOG_GROUP_ID
-from ISTKHARMUSIC import app
-from ISTKHARMUSIC.core.userbot import Userbot
-from ISTKHARMUSIC.utils.database import delete_served_chat, add_served_chat
-from ISTKHARMUSIC.utils.database import get_assistant
+from ERAVIBES import app
+from ERAVIBES.core.userbot import Userbot
+from ERAVIBES.utils.database import delete_served_chat, add_served_chat
+from ERAVIBES.utils.database import get_assistant
 
 
 photo = [
